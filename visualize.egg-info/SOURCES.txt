@@ -1,0 +1,8 @@
+setup.py
+visualize/__init__.py
+visualize/lecture.py
+visualize/visualize.py
+visualize.egg-info/PKG-INFO
+visualize.egg-info/SOURCES.txt
+visualize.egg-info/dependency_links.txt
+visualize.egg-info/top_level.txt

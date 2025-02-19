@@ -10,7 +10,7 @@ def visualize_model(file_path, window_name="Visualisation", output_dir=None, epo
     mesh = o3d.io.read_triangle_mesh(file_path)
     
     # Créer une fenêtre de visualisation
-    vis = o3d.visualization.Visualizer()
+    vis = o3d.visualize.Visualizer()
     vis.create_window(window_name=window_name)
     
     # Ajouter le mesh
@@ -43,7 +43,7 @@ def visualize_all_models_in_directory(directory):
                 print(f"Erreur lors de la visualisation du fichier {file_path} : {e}")
     
     if geometries:
-        vis = o3d.visualization.Visualizer()
+        vis = o3d.visualize.Visualizer()
         vis.create_window(window_name="Visualisation de tous les modèles")
         for geometry in geometries:
             vis.add_geometry(geometry)
